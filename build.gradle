@@ -1,0 +1,11 @@
+buildscript {
+    repositories {
+        maven { url = uri("https://dl.bintray.com/emign/engineEmi") }
+        maven { url = uri("https://plugins.gradle.org/m2/") }
+    }
+    dependencies {
+        classpath("me.emig:engineEmiGradlePlugin:0.29")
+    }
+}
+
+apply plugin: me.emig.engineEmi.gradle.EngineEmiGradlePlugin
