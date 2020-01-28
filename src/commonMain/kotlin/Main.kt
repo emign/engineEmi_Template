@@ -38,7 +38,7 @@ suspend fun main() {
              * Code, der NACH dem Aufbau des Views ausgeführt wird
              */
             viewDidLoad {
-                engine.registerController(CamController(engine.camera))
+                
             }
 
             start()
