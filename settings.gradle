@@ -1,2 +1,8 @@
-rootProject.name = 'engineEmi_Template'
+rootProject.name = 'engineEmi_Lektionen'
 enableFeaturePreview("GRADLE_METADATA")
+
+for (file in rootDir.listFiles()) {
+    if (file.isDirectory() && file.name.startsWith("lektion-") && (new File(file, "build.gradle").exists() || new File(file, "build.gradle").exists())) {
+        include(":${file.name}")
+    }
+}

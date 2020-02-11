@@ -1,0 +1,1 @@
+class Person(var name: String, var wartenummer: String = "keine")

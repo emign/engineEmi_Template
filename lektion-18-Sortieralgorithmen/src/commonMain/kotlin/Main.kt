@@ -1,3 +1,4 @@
+import UebungArraySortieren.*
 import me.emig.engineEmi.*
 
 
@@ -18,30 +19,35 @@ val engine = Engine()
  * angewiesen ist, dass Objekte bereits fertig erstellt und registriert wurden. Dies trifft vor allem auf [Ebody] Objekte zu.
  */
 suspend fun main() {
-        engine.run {
+    engine.run {
 
-            /**
-             * Code um die Engine zu konfigurieren.
-             */
-            init {
-
-            }
-
-            /**
-             * Code der VOR dem Aufbau des Views ausgeführt wird
-             */
-            viewWillLoad {
-
-            }
-
-            /**
-             * Code, der NACH dem Aufbau des Views ausgeführt wird
-             */
-            viewDidLoad {
-                
-            }
-
-            start()
+        /**
+         * Code um die Engine zu konfigurieren.
+         */
+        init {
+            view.width = 510
+            view.height = 250
+            ArrayController.arrayErzeugen(100)
+            ArrayController.sortieralgorithmus = QuickSort
+            ArrayController.wartezeit = 50
+            ArrayController.sortieren()
         }
+
+        /**
+         * Code der VOR dem Aufbau des Views ausgeführt wird
+         */
+        viewWillLoad {
+
+        }
+
+        /**
+         * Code, der NACH dem Aufbau des Views ausgeführt wird
+         */
+        viewDidLoad {
+
+        }
+
+        start()
+    }
 }
 
