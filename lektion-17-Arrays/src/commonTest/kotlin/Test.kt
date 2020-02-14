@@ -36,7 +36,7 @@ class ArrayTest : KorgeTest() {
 
     @Test
     fun testArrayVon1bis10() {
-        assertEquals(arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).toIntArray().joinToString(), ArrayUebung.arrayVon0bis9().joinToString())
+        assertEquals(arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).toIntArray().joinToString(), ArrayUebung.arrayVon1bis10().joinToString())
     }
 
     @Test
