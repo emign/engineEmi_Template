@@ -2,11 +2,6 @@ import me.emig.engineEmi.*
 
 
 /**
- * Das Default (und eigentlich immer) das einzige Engine-Objekt
- */
-val engine = Engine()
-
-/**
  * Startpunkt für alle Programme.
  * Hier werden u.a. [Ebody] und [CanvasElement] Objekte bei der [Engine] registriert.
  * Es gibt drei Bereiche:
