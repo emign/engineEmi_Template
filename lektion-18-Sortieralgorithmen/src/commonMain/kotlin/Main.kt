@@ -1,10 +1,6 @@
 import me.emig.engineEmi.*
 
 
-/**
- * Das Default (und eigentlich immer) das einzige Engine-Objekt
- */
-val engine = Engine()
 
 /**
  * Startpunkt für alle Programme.

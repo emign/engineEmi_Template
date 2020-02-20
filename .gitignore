@@ -2,4 +2,7 @@
 /.gradle/
 /build/
 /build/classes/kotlin/js/main/
+/lektion-16-Nullables/build/
 /lektion-17-Arrays/build/
+/lektion-18-Sortieralgorithmen/build/
+

@@ -19,7 +19,7 @@ class Kino {
 
     fun besetzteSitze() = 100
 
-    fun ersterSitzPlatzLeer() = null
+    fun ersterSitzPlatzLeer() = Sitzplatz()
 
 
 }
