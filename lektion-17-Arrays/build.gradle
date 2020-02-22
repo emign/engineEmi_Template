@@ -1,5 +1,5 @@
-apply plugin: me.emig.engineEmi.gradle.EngineEmiGradlePlugin
+apply plugin: "me.emig.engineEmi.gradle.EngineEmiGradlePlugin"
 
 korge {
-    id = "me.emig.lektionen.arrays_sortieren"
+    id = "me.emig.engineEmi.lektionen.arrays_sortieren"
 }

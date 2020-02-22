@@ -1,5 +1,5 @@
+import UebungArraySortieren.*
 import me.emig.engineEmi.*
-
 
 
 /**
@@ -13,6 +13,8 @@ import me.emig.engineEmi.*
  * viewDidLoad: Dieser Code-Block wird NACH dem der View komplett aufgebaut wurde ausgeführt. Hier sollte man Code platzieren, der darauf
  * angewiesen ist, dass Objekte bereits fertig erstellt und registriert wurden. Dies trifft vor allem auf [Ebody] Objekte zu.
  */
+
+
 suspend fun main() {
     engine.run {
 
@@ -22,6 +24,10 @@ suspend fun main() {
         init {
             view.width = 510
             view.height = 250
+            ArrayController.arrayErzeugen(100)
+            ArrayController.wartezeit = 120
+            ArrayController.sortieralgorithmus = QuickSort
+            ArrayController.sortieren()
         }
 
         /**

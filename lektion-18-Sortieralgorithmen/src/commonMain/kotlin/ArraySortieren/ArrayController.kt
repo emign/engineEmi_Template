@@ -3,9 +3,11 @@ package UebungArraySortieren
 import com.soywiz.klock.*
 import com.soywiz.korau.sound.*
 import com.soywiz.korim.color.*
-import engine
+
 import kotlinx.coroutines.*
+import me.emig.engineEmi.*
 import me.emig.engineEmi.screenElements.canvasElements.*
+
 
 object ArrayController {
 

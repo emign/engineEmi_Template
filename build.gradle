@@ -6,6 +6,5 @@ buildscript {
     }
     dependencies {
        classpath("me.emig:engineEmiGradlePlugin:0.42")
-
     }
 }
