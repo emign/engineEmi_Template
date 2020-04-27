@@ -1,5 +1,5 @@
 buildscript {
-    val engineEmiVersion = "0.57"
+    val engineEmiVersion = "0.60"
 
     repositories {
         maven {
