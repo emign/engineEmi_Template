@@ -1,4 +1,5 @@
-import me.emig.engineEmi.*
+import me.emig.engineEmi.Engine
+import me.emig.engineEmi.EngineConfig
 
 
 /**
@@ -12,31 +13,10 @@ import me.emig.engineEmi.*
  * viewDidLoad: Dieser Code-Block wird NACH dem der View komplett aufgebaut wurde ausgeführt. Hier sollte man Code platzieren, der darauf
  * angewiesen ist, dass Objekte bereits fertig erstellt und registriert wurden. Dies trifft vor allem auf [Ebody] Objekte zu.
  */
-suspend fun main() {
-        engine.run {
+val config = EngineConfig(width = 1024, height = 512)
 
-            /**
-             * Code um die Engine zu konfigurieren.
-             */
-            init {
+suspend fun main() = Engine(config) {
 
-            }
 
-            /**
-             * Code der VOR dem Aufbau des Views ausgeführt wird
-             */
-            viewWillLoad {
-
-            }
-
-            /**
-             * Code, der NACH dem Aufbau des Views ausgeführt wird
-             */
-            viewDidLoad {
-                
-            }
-
-            start()
-        }
 }
 
