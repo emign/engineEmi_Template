@@ -1,5 +1,6 @@
 buildscript {
-    val engineEmiVersion = "0.77"
+    val engineEmiVersion = "0.83"
+
 
     repositories {
         maven {
@@ -8,7 +9,7 @@ buildscript {
         maven { url = uri("https://dl.bintray.com/korlibs/korlibs") }
         maven { url = uri("https://plugins.gradle.org/m2/") }
         mavenCentral()
-        mavenLocal()
+       // mavenLocal()
     }
     dependencies {
         classpath("me.emig:engineEmiGradlePlugin:$engineEmiVersion")
