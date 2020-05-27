@@ -1,5 +1,5 @@
 buildscript {
-    val engineEmiVersion="0.86"
+    val engineEmiVersion="0.87"
 
 
     repositories {
