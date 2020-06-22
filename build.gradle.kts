@@ -1,19 +1,34 @@
-buildscript {
-    val engineEmiVersion="0.85"
+import com.soywiz.korge.gradle.*
+
+    buildscript {
+        val korgePluginVersion: String by project
 
 
-    repositories {
-        maven {
-            url = uri("https://dl.bintray.com/emign/engineEmi")
+        repositories {
+            mavenLocal()
+            maven { url = uri("https://dl.bintray.com/korlibs/korlibs") }
+            maven { url = uri("https://plugins.gradle.org/m2/") }
+            mavenCentral()
+            google()
         }
-        maven { url = uri("https://dl.bintray.com/korlibs/korlibs") }
-        maven { url = uri("https://plugins.gradle.org/m2/") }
-        mavenCentral()
-       // mavenLocal()
+        dependencies {
+            classpath("com.soywiz.korlibs.korge.plugins:korge-gradle-plugin:$korgePluginVersion")
+        }
     }
-    dependencies {
-        classpath("me.emig:engineEmiGradlePlugin:$engineEmiVersion")
-    }
+
+apply<KorgeGradlePlugin>()
+
+korge {
+    id = "com.sample.demo"
 }
 
-apply<me.emig.engineEmi.gradle.EngineEmiGradlePlugin>()
+    val libEmiVersion : String by project
+
+    repositories {
+        maven { url = uri("https://dl.bintray.com/emign/libEmi") }
+        mavenLocal()
+    }
+
+    dependencies {
+        add("commonMainApi", "me.emig:libEmi:$libEmiVersion")
+    }
